@@ -1,0 +1,106 @@
+/* Home.css */
+.home {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.home_container {
+  width: 100%;
+  position: relative;
+}
+
+.home_image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  z-index: 1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.home_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+  background: transparent;
+}
+
+/* Product Card Styles */
+.product {
+  background-color: white;
+  padding: 20px;
+  min-width: 100px;
+  max-width: 400px;
+  flex: 1;
+  margin: 0 10px;
+  z-index: 1;
+  border-radius: 4px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect to "pop-up" the card */
+.product:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for a 3D effect */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.product_info {
+  margin-bottom: 15px;
+}
+
+.product_title {
+  font-size: 14px;
+  color: #0f1111;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+
+.product_price {
+  color: #0f1111;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+.product_rating {
+  display: flex;
+  color: #ffa41c;
+  margin-bottom: 8px;
+}
+
+.product img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+.add_to_bucket {
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  border-radius: 8px;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  color: #0f1111;
+  font-size: 13px;
+  margin-top: auto;
+}
+
+.add_to_bucket:hover {
+  background: #f7ca00;
+}

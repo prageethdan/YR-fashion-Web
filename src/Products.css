@@ -1,0 +1,113 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease; /* Adjusted for smooth scaling */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.products:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.product_info {
+  height: auto;
+  width: 100%;
+  margin-bottom: auto;
+  font-size: 14px;
+  color: #0f1111;
+}
+
+.product_price {
+  margin-top: 1px;
+  font-size: 16px;
+  color: #0f1111;
+}
+
+.product_price small {
+  font-size: 12px;
+  margin-right: 2px;
+  position: relative;
+  top: -2px;
+}
+
+.product_price strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product_rating {
+  display: flex;
+  margin-top: 0%;
+}
+
+.product_rating p {
+  color: #ffa41c;
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+.img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+button {
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 20px;
+  margin-top: auto;
+  cursor: pointer;
+  color: #0f1111;
+  font-size: 13px;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background: #f7ca00;
+}
+
+/* Container for Products Grid */
+.products_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .products {
+    max-width: 100%;
+    margin: 5px;
+    padding: 15px;
+  }
+
+  .img {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products_container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

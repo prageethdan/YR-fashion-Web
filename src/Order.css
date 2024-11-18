@@ -1,0 +1,154 @@
+/* Order.css */
+.order {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.order h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.order_id {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.order_id small {
+  font-weight: 600;
+  color: #333;
+}
+
+.checkoutProduct {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.checkoutProduct img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.checkoutProduct .product_info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.checkoutProduct .product_info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.checkoutProduct .product_info p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.checkoutProduct .product_info .product_price {
+  font-size: 16px;
+  color: #111;
+  font-weight: bold;
+}
+
+.checkoutProduct .product_info .product_rating {
+  display: flex;
+  margin-top: 5px;
+}
+
+.checkoutProduct .product_info .product_rating span {
+  margin-right: 2px;
+  color: #f0c14b;
+}
+
+.checkoutProduct .product_info .product_rating span:last-child {
+  margin-right: 0;
+}
+
+.order .subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.order .subtotal strong {
+  color: #111;
+  font-size: 20px;
+}
+
+.order .subtotal p {
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+}
+
+.order .subtotal .total_price {
+  font-size: 22px;
+  color: #111;
+  font-weight: 700;
+}
+
+.order .subtotal .total_price span {
+  font-size: 18px;
+  color: #28a745;
+}
+
+@media (max-width: 768px) {
+  .order {
+    padding: 15px;
+  }
+
+  .order h2 {
+    font-size: 20px;
+  }
+
+  .order p {
+    font-size: 14px;
+  }
+
+  .order .subtotal {
+    padding: 10px;
+  }
+
+  .order .subtotal p {
+    font-size: 14px;
+  }
+
+  .checkoutProduct img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .checkoutProduct .product_info h3 {
+    font-size: 16px;
+  }
+
+  .checkoutProduct .product_info p {
+    font-size: 12px;
+  }
+}
